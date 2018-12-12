@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS sandboxDB;
+CREATE DATABASE sandboxDB;
+USE sandboxDB;
+
+CREATE TABLE foo (
+	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    name VARCHAR(255) NOT NULL
+);
+
+INSERT INTO foo (name) VALUES ("Travis");
+INSERT INTO foo (name) VALUES ("Gillian");
+
+SELECT * FROM foo;
